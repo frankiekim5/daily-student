@@ -1,0 +1,33 @@
+.landing-container {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 8px 16px 0 #757575;
+  height: 60%;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+
+  .app-info-container {
+    flex: 1 0 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #455A64;
+
+    .info-header {
+      text-align: center;
+      color: white;
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .login-register {
+    flex: 1 0 65%;
+  }
+}

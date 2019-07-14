@@ -1,0 +1,18 @@
+<div class="landing-container">
+  <div class="app-info-container">
+    <h1 class="info-header">Daily Student</h1>
+    <h2 class="info-header">Every Student's Essentials</h2>
+  </div>
+  <app-login
+    *ngIf="!showRegister"
+    class="login-register"
+    (signUpClick)="loadRegister()"
+    >
+  </app-login>
+  <app-register
+    *ngIf="showRegister"
+    class="login-register"
+    (registerClick)="loadLogin()"
+    >
+  </app-register>
+</div>

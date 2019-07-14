@@ -1,0 +1,69 @@
+.login-container {
+  background-color: white;
+
+  .inputs-container {
+    margin-top: 5.5rem;
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+
+    .signin-header {
+      margin-bottom: 2rem;
+      color: #455A64;
+    }
+
+    .credentials-input {
+      width: 75%;
+      margin-bottom: 1rem;
+    }
+
+    .input-buttons {
+      margin-top: 1rem;
+
+      .login-button {
+        width: 35%;
+        height: 2rem;
+        background-color: #455A64;
+        color: white;
+        border: 2px solid #455A64;
+        border-radius: 3px;
+        margin-right: 2rem;
+
+        &:hover {
+          cursor: pointer;
+          background-color: #607D8B;
+          border-color: #607D8B;
+        }
+        &:active {
+          background-color: #455A64;
+        }
+      }
+    }
+
+    .signup-container {
+      margin-top: 2.5rem;
+
+      .signup-button {
+        border: 0;
+        background-color: white;
+
+        &:hover {
+          cursor: pointer;
+        }
+        &:active span {
+          color: #90A4AE;
+        }
+        &:focus {
+          outline: none;
+        }
+
+        .signup {
+          color: #455A64;
+          font-weight: bold;
+        }
+      }
+    }
+
+  }
+
+}
